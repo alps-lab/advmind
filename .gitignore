@@ -1,0 +1,45 @@
+# Configureation Files
+.vs
+.vscode
+.devcontainer
+
+# Temp Files
+.DS_Store
+.dropbox
+.ssh
+**/__pycache__
+**/.ipynb_checkpoints
+*.pyc
+*.ini
+
+/issue
+/test.py
+
+# Filter Directory
+/config/
+/config_cmd/
+/bash
+/data
+/result
+/output
+/output*/
+abandon
+ref
+prev_projects
+**/todo
+**/bak
+
+# Filter Files
+*.bak
+*.eps
+*.pyproj
+*.sln
+/*workspace.py
+
+
+dogfish
+tiny_imagenet
+.idea
+
+# add by Zhaohan, nohup logs
+log
