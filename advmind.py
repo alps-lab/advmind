@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# python advmind.py --verbose --pretrain --attack_adapt --defend_adapt --active --output 15
+
 from trojanzoo.parser import Parser_Dataset, Parser_Model, Parser_Seq
 from trojanzoo.parser.defense import Parser_AdvMind
 from trojanzoo.dataset import Dataset

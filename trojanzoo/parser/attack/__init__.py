@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 
 from .adv import *
-from .. import Parser
 
-from trojanzoo.defense import class_dict
+from trojanzoo.attack import class_dict
+from ..parser import Parser
 import sys
 
 
-class Parser_Defense(Parser):
-    r"""Universal Defense Parser
+class Parser_Attack(Parser):
+    r"""Universal Attack Parser
 
     Attributes:
-        name (str): ``'defense'``
+        name (str): ``'attack'``
     """
-    name = 'defense'
+    name = 'attack'
 
     def __init__(self):
         argv = sys.argv
@@ -24,8 +24,8 @@ class Parser_Defense(Parser):
             print("You need to set '--attack' to call 'Parser_Attack'. ")
             raise e
 
-        pkg = __import__('trojanzoo.parser.defense', fromlist=['class_dict'])
-        class_name: str = 'Parser_' + class_dict[self.defense]
+        pkg = __import__('trojanzoo.parser.attack', fromlist=['class_dict'])
+        class_name: str = 'Parser_' + class_dict[self.attack]
         _class = getattr(pkg, class_name)
         self.parser: Parser = _class()
 

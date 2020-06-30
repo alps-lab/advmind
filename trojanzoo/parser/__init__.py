@@ -11,4 +11,6 @@ from .model import Parser_Model
 
 from .train import Parser_Train
 
+from .mark import Parser_Mark
+from .attack import Parser_Attack
 from .defense import Parser_Defense
