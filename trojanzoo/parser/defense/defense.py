@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from .adv import *
-from .backdoor import *
 from .. import Parser
 
 from trojanzoo.dataset import Dataset

@@ -19,7 +19,7 @@ Quick Start:
 2. Test AdvMind:   
 
 ``` python3
-   python advmind.py --verbose --save --batch_size 128
+   python advmind.py --verbose --pretrain --attack_adapt --defend_adapt --active --output 15
    ```
 
 Usage:
@@ -37,3 +37,7 @@ Parameters Config: (Priority Increasing)
 2. Workspace Default: `/config/`
 3. Custom Config: `--config [config location]`
 4. CMD parameters: `--[parameter] [value]`
+Output Verbose Information:
+
+1. CMD arguments and modules: `--verbose`
+2. AdvMind verbose information: `--output [number]`
